@@ -1,50 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
     <title>Survey Form</title>
-</head>
-<body style="background-color: #f4a64e; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh;">
+  </head>
+  <body>
+    <form>
+      <center>
+      <fieldset style="width:44%; border: 44px solid orange; background-color: white;">
+    <center><h1>Survey Form</h1></center>
+    <center><h4>User Stories Survey Form</h4></center>
 
-    <form style="background: white; padding: 20px; border-radius: 10px; text-align: center; width: 350px;">
-        <h1 style="margin-bottom: 5px;">Survey Form</h1>
-        <p style="color: gray; margin-bottom: 15px;">User stories survey form</p>
+      <!-- Name Field -->
+      <table align="center">
+        <tr>
+          <td align="left"><label for="Enter Name">Name</label></td>
+          <td><input type="text" id="Enter Name" placeholder="Enter name"></td>
+        </tr>
 
-        <label for="name" style="display: block; text-align: left; margin: 10px 0 5px;">Name:</label>
-        <input type="text" id="name" placeholder="Enter Name" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
+      <!-- E-Mail Field -->
+        <tr>
+          <td align="left"><label for="Enter E-Mail">E-Mail</label></td>
+          <td><input type="text" id="Enter E-Mail" placeholder="Enter E-mail"></td>
+        </tr>
 
-        <label for="email" style="display: block; text-align: left; margin: 10px 0 5px;">E-mail:</label>
-        <input type="email" id="email" placeholder="Enter E-Mail" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
 
-        <label for="experience" style="display: block; text-align: left; margin: 10px 0 5px;">Work Experience:</label>
-        <input type="number" id="experience" placeholder="Enter Number" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
+      <!-- Work Experience Field -->
+        <tr>
+          <td align="left"><label for="Enter Number">Work Experience</label></td>
+          <td><input type="text" id="Enter Number" placeholder="Enter Number"></td>
+        </tr>
 
-        <label style="display: block; text-align: left; margin: 10px 0 5px;">Are you comfortable in investing in real estate on platform without first investigating properly</label>
-        <select style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;">
-            <option>Yes</option>
-            <option>No</option>
-        </select>
+      <!-- Real Estate Investment -->
+        <tr>
+          <td align="left"><label>Are you comfortable in investing<br> in real-estate on platform without<br> first investing property?</label></td>
+          <td>
+            <select>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </td>
+        </tr>
 
-        <label for="suggestions" style="display: block; text-align: left; margin: 10px 0 5px;">Suggestions to build trusted platform</label>
-        <textarea id="suggestions" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+      <!-- Suggestions Field -->
+        <tr>
+          <td align="left"><label for="suggestions">Suggestions to build a trusted platform</label></td>
+          <td><input type="text" id="suggestions"></td>
+        </tr>
 
-        <label style="display: block; text-align: left; margin: 10px 0 5px;">You are ready to invest in:</label>
-        <div style="display: flex; flex-direction: column; text-align: left;">
-            <label><input type="checkbox"> Real Estate</label>
-            <label><input type="checkbox"> Mutual Funds</label>
-            <label><input type="checkbox"> Crypto Currency</label>
-            <label><input type="checkbox"> Stocks & Bonds</label>
-        </div>
+      <!-- Investment Options -->
+        <tr>
+          <td align="left"><label>You are ready to invest in:</label></td>
+          <td>
+            <input type="checkbox" name="option1"> Real estate<br>
+            <input type="checkbox" name="option2"> Mutual funds<br>
+            <input type="checkbox" name="option3"> Crypto currency<br>
+            <input type="checkbox" name="option4"> Stocks and bonds<br><br>
+          </td>
+        </tr>
 
-        <label style="display: block; text-align: left; margin: 10px 0 5px;">Are you ready for further contact</label>
-        <div style="display: flex; flex-direction: column; text-align: left;">
-            <label><input type="radio" name="contact"> Yes</label>
-            <label><input type="radio" name="contact"> No</label>
-        </div>
+      <!-- Ready for Further Content -->
+        <tr>
+          <td align="left"><label>Are you ready for further content?</label></td>
+          <td>
+            <input type="radio" name="option" value="yes"> Yes<br>
+            <input type="radio" name="option" value="no"> No
+          </td>
+        </tr>
 
-        <button type="submit" style="background: orange; color: white; border: none; padding: 10px; width: 100%; border-radius: 5px; cursor: pointer; margin-top: 10px;">Submit</button>
+      <!-- Submit Button -->
+        <tr>
+          <td colspan="2" align="center"><button type="submit" style="background-color: orange;">Submit</button></td>
+        </tr>
+      </table>
+    </fieldset>
+    </center>
     </form>
 
-</body>
+  </body>
 </html>
